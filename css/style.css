@@ -82,13 +82,14 @@ body {
 .grid img {
 margin: 2px;
 transform-style: preserve-3d;
-transition: transform 0.5s;
-width: 20%;
-height: 60%
+transition: transform 2s;
+width: 140px;
+height: 140px;
 }
 
 .grid img.flip {
-transform: rotateY(180deg);
+/* transform: rotateY(180deg); */
+transition-duration: 3s;
 }
 
 .popup {
