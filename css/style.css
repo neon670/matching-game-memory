@@ -1,0 +1,121 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #ffffff;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 16px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+
+.score-panel {
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.score-panel .stars {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+	list-style: none;
+	display: inline-block;
+}
+
+.score-panel .restart {
+	float: right;
+	cursor: pointer;
+}
+
+.fa-star {
+	color: #FFD700;
+}
+
+.timer {
+	display: inline-block;
+	margin: 0 1rem;
+}
+
+
+.grid {
+  width: 85%;
+  background: #716F71;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 3em;
+}
+
+.grid img {
+margin: 2px;
+transform-style: preserve-3d;
+transition: transform 0.5s;
+width: 20%;
+height: 60%
+}
+
+.grid img.flip {
+transform: rotateY(180deg);
+}
+
+.popup {
+background: #716F71;
+width: 200px;
+height: 200px;
+position: fixed;
+z-index:20;
+top: 100px;
+/* left: 100px; display: flex; */
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.playAgain{
+  border-radius: 5px;
+  height: 50px;
+  font-size: 18px;
+}
+.data {
+display: flex;
+justify-content: space-between;
+padding: 20px 30px;
+font-size: 23px;
+}
+
+.data span {
+color: rgb(206, 121, 11);
+font-size: 30px;
+}
