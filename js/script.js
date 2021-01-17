@@ -172,7 +172,7 @@ cardsId.push(selected);
 this.classList.add("flip");
 this.setAttribute("src", cardArray[selected].img);
 if (cardsId.length === 2) {
-setTimeout(checkForMatch, 500);
+setTimeout(checkForMatch, 700);
 }
 }
 // checkForMatch function
@@ -182,13 +182,13 @@ let imgs = document.querySelectorAll("img");
 let firstCard = cardsId[0];
 let secondCard = cardsId[1];
 if (cardsSelected[0] === cardsSelected[1] && firstCard !== secondCard) {
+setTimeout(checkForMatch, 400);
 alert("you have found a match");
- // source.src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3"
-  //this below is used if you want to add sounds, you can comment it out if you dont want it
+
 
 cardsWon += 1;
 scoreBoard.innerHTML = cardsWon;
-setTimeout(checkWon,500)
+setTimeout(checkWon,700)
 } else {
 imgs[firstCard].setAttribute("src", "img/blue-placeholder.png");
 imgs[secondCard].setAttribute("src", "img/blue-placeholder.png"); ;
