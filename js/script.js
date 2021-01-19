@@ -183,7 +183,7 @@ let firstCard = cardsId[0];
 let secondCard = cardsId[1];
 if (cardsSelected[0] === cardsSelected[1] && firstCard !== secondCard) {
 setTimeout(checkForMatch, 400);
-alert("you have found a match");
+startConfetti(3000);
 
 
 cardsWon += 1;
